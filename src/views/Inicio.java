@@ -4,6 +4,8 @@
  */
 package views;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ever Vásquez
@@ -26,21 +28,41 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnHolaMundo = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btnHolaMundo.setText("HOLA MUNDO");
+        btnHolaMundo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHolaMundoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 514, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(187, 187, 187)
+                .addComponent(btnHolaMundo)
+                .addContainerGap(213, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 393, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(182, 182, 182)
+                .addComponent(btnHolaMundo)
+                .addContainerGap(184, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnHolaMundoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHolaMundoActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "HOLA MUNDO","MENSAJE:", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_btnHolaMundoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +100,6 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnHolaMundo;
     // End of variables declaration//GEN-END:variables
 }

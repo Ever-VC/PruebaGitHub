@@ -61,7 +61,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void btnHolaMundoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHolaMundoActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "HOLA MUNDO ACTUALIZADO DESDE LA RAMA DE EVER","MENSAJE:", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "HOLA MUNDO ACTUALIZADO DESDE LA RAMA DE REBECA","MENSAJE:", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_btnHolaMundoActionPerformed
 
     /**
